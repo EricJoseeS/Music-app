@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerTube Web Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <h2>InnerTube Player</h2>
+        
+        <!-- Search Bar -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search songs or artists...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- Track Info Display -->
+        <div class="track-info">
+            <img id="trackThumbnail" src="https://via.placeholder.com/150" alt="Album Art">
+            <h3 id="trackTitle">No Track Selected</h3>
+            <p id="trackArtist">Choose a song to start listening</p>
+        </div>
+
+        <!-- Audio Controls -->
+        <audio id="audioElement"></audio>
+        <div class="controls">
+            <button id="playBtn" disabled>Play</button>
+        </div>
+        <div class="progress-container">
+            <span id="currentTime">0:00</span>
+            <input type="range" id="progressBar" value="0" max="100">
+            <span id="duration">0:00</span>
+        </div>
+
+        <!-- Search Results List -->
+        <div class="results-container">
+            <h3>Results</h3>
+            <ul id="resultsList"></ul>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

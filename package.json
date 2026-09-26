@@ -1,0 +1,17 @@
+{
+  "name": "yt-web-player",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "youtubei.js": "^13.4.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
